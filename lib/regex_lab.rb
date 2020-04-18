@@ -14,8 +14,8 @@ def words_five_letters_long(word)
   word.scan(/\b\w{5}\b/)
 end
 
-def first_word_capitalized_and_ends_with_punctuation?(word)
-  if word.match(/\b\A[A-Z]\z[.?!]\b/)
+def first_word_capitalized_and_ends_with_punctuation?(string)
+  if word.match(/\A[A-Z]\z[.?!]/)
     true
   else
     false
