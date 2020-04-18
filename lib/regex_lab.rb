@@ -23,7 +23,7 @@ def first_word_capitalized_and_ends_with_punctuation?(string)
 end
 
 def valid_phone_number?(number)
-  if number.chomp.match(/\\d{10}/)
+  if number.strips.match(/\\d{10}/)
     true
   else
     false
